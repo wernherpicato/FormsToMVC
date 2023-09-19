@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Marketing</title>
+
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+</head>
+<body>
+    <div id="wrapper">
+        @Html.Partial("Nav") <!-- will pull in Nav.cshtml -->
+        <!-- Begin Page Wrapper -->
+        <div id="page-wrapper">
+            @RenderBody() <!-- will pull in Index.cshtml -->
+        </div>
+        <!-- End Page Wrapper -->
+    </div>
+
+    <!-- A section that can be overwritten on other pages-->
+    @*@RenderSection("Scripts", required: false);*@
+</body>
+</html>
